@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_navigation_links",
+  "info": {
+    "name": "link",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "displayText": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "targetBlank": {
+      "type": "boolean"
+    }
+  }
+}

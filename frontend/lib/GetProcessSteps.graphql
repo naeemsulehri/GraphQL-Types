@@ -1,0 +1,11 @@
+query GetProcessSteps {
+  processSteps {
+    id
+    title
+    description
+    altText
+    image {
+      url
+    }
+  }
+}

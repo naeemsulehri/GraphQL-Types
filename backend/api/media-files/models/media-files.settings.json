@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media_files",
+  "info": {
+    "name": "media Files"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "chatIcon",
+        "cloudIcon",
+        "favicon",
+        "imacEmpty",
+        "ipadEmpty",
+        "importIcon",
+        "logoPin",
+        "logoText",
+        "mapPin",
+        "monitoringIcon",
+        "oneClickIcon",
+        "Phone",
+        "productVideo",
+        "naviIcon",
+        "sync",
+        "kameraIcon"
+      ],
+      "required": true,
+      "unique": true
+    },
+    "altText": {
+      "type": "string"
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

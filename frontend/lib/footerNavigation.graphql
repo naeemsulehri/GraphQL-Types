@@ -1,0 +1,10 @@
+#import "./links.gql"
+
+query GetFooterNavigation {
+  footerNavigations {
+    link {
+      ...LinkParts
+      targetBlank
+    }
+  }
+}

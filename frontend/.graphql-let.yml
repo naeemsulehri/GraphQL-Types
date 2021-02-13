@@ -1,0 +1,11 @@
+schema:
+  - ${NEXT_APP_STRAPI_URL}/graphql:
+      headers:
+        'Authorization': 'Bearer ${NEXT_APP_STRAPI_JWT_BEARER_TOKEN}'
+documents: '**/*.graphql'
+plugins:
+  - typescript
+  - typescript-operations
+  - typescript-react-apollo
+respectGitIgnore: true
+cacheDir: __generated__

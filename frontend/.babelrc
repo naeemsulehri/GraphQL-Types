@@ -1,0 +1,8 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    "macros",
+    "@emotion/babel-plugin",
+    "babel-plugin-styled-components"
+  ]
+}

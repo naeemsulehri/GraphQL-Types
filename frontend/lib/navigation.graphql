@@ -1,0 +1,9 @@
+#import "./links.gql"
+
+query GetNavigation {
+  navigations {
+    link {
+      ...LinkParts
+    }
+  }
+}

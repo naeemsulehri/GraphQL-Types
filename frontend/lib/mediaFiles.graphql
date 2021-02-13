@@ -1,0 +1,10 @@
+query GetMediaFiles($type: ENUM_MEDIAFILES_TYPE!) {
+  mediaFiles(where: { type: $type }) {
+    id
+    type
+    altText
+    media {
+      url
+    }
+  }
+}

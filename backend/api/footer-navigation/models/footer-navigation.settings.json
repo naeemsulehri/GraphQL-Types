@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footer_navigations",
+  "info": {
+    "name": "Footer Navigation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.link"
+    }
+  }
+}

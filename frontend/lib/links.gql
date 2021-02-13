@@ -1,0 +1,5 @@
+fragment LinkParts on ComponentNavigationLink {
+  id
+  address
+  displayText
+}

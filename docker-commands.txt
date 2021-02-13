@@ -1,0 +1,22 @@
+docker build . -f app/Dockerfile -t strapi
+
+docker-compose pull
+
+docker-compose build
+
+docker-compose up -d (to run in docker terminal, inside docker desktop)
+
+docker-compose up (to run docker terminal)
+
+docker-compose down
+
+docker rm -vf $(docker ps -a -q)   (to kill/remove all containers)
+
+docker rmi -f $(docker images -a -q)  (to kill/remove all images)
+
+docker image prune (to kill/remove all unused images)
+
+docker system prune (kill all stopped/dangling containers, images and netwroks)
+
+docker exec -it strapi-nextjs-mongo_strapi_1 bash
+
